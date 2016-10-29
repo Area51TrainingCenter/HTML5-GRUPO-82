@@ -1,0 +1,119 @@
+.example1 input{
+  font-size: 120%;
+  color: #5a5854;
+  background-color: #f2f2f2;
+  border: 1px solid #bdbdbd;
+  padding: 5px 5px 5px 30px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  background-repeat: no-repeat;
+  background-position: 97% center;
+}
+.example1 input:focus{
+  background-color: white;
+  border: 1px solid red;
+  outline: none;
+}
+
+/*    COLOR PLACEHOLDER   */
+::-webkit-input-placeholder { color: red; opacity: 1 !important; }
+:-moz-placeholder { color: red;}
+::-moz-placeholder {color: red;}
+:-ms-input-placeholder {color: red;}
+
+
+.example1 input#email{
+  background-image: url(../images/email.png);
+}
+.example1 input#twitter{
+  background-image: url(../images/twitter.png);
+}
+.example1 input#web{
+  background-image: url(../images/web.png);
+}
+
+.example2 fieldset{
+
+  font-family: Arial, Verdana, sans-serif;
+
+  width: 350px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: right;
+}
+.example2 legend{
+  background-color: #efefef;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.example2 input{
+  border: none;
+  border-bottom: 1px dotted #000;
+  padding: 5px;
+  width: 258px;
+  margin-bottom: 20px;
+}
+
+.example2 input:focus{
+  border: 1px dotted #000;
+  outline: none;
+}
+
+.example2 input#submit{
+  color: #FFF;
+  background-color: #665544;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  cursor: pointer;
+  cursor: url(url de la imagen);
+}
+.example2 input#submit:hover{
+  color: #665544;
+  background: #efefef;
+}
+
+.example3 div{
+  border-bottom: 1px solid #efefef;
+  margin: 10px;
+  padding-bottom: 10px;
+  width: 260px;
+}
+.example3 .title{
+  float: left;
+  width: 110px;
+  text-align: right;
+  padding-right: 10px;
+}
+.example3 .submit{
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************/

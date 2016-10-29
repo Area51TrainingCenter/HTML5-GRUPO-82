@@ -7,11 +7,63 @@
   </head>
   <body>
 
-    <h1>Styling Text Inputs</h1>
+    <div class="example1">
+      <h1>Styling Text Inputs</h1>
 
-    <input placeholder="Enter mail" type="text" id="email" name="mail" value="">
-    <input placeholder="Twitter" type="text" id="twitter" name="tw" value="">
-    <input placeholder="Website" type="text" id="web" name="web" value="">
+      <input placeholder="Enter mail" type="text" id="email" name="mail" value="">
+      <input placeholder="Twitter" type="text" id="twitter" name="tw" value="">
+      <input placeholder="Website" type="text" id="web" name="web" value="">
+    </div>
+
+    <br>
+    <hr><hr><hr>
+    <br>
+    <div class="example2">
+      <form>
+        <fieldset>
+          <legend>Login user</legend>
+          <label for="user">User: </label>
+          <input type="text" name="user" value="">
+          <label for="pass">Password: </label>
+          <input type="password" name="pass" value="">
+
+          <input type="submit" id="submit" value="Ingresar">
+
+        </fieldset>
+      </form>
+    </div>
+
+    <br>
+    <hr><hr><hr>
+    <br>
+
+    <div class="example3">
+        <form class="" action="index.html" method="post">
+          <div>
+            <label class="title" for="name">Name: </label>
+            <input type="text" name="name" value="">
+          </div>
+          <div>
+            <label class="title" for="email">E-mail: </label>
+            <input type="text" name="email" value="">
+          </div>
+          <div>
+            <span class="title">Gender: </span>
+            <input id="male" type="radio" name="gender" value="M">
+            <label for="male">Male</label>
+            <input id="female" type="radio" name="gender" value="F">
+            <label for="female">Female</label>
+          </div>
+          <div class="submit">
+            <input type="submit" name="name" value="Register">
+          </div>
+        </form>
+    </div>
+
+    <br>
+    <hr><hr><hr>
+    <br>
+
 
   </body>
 </html>
