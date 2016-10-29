@@ -1,0 +1,107 @@
+.menu {
+  list-style-type: none;
+  margin: 10px 0px;
+  padding-left: 0px
+}
+
+.menu li{
+  background: lime;
+  padding: 10px 20px;
+  max-width: 150px;
+}
+
+.menu li:hover{
+  border: 3px dashed red;
+}
+.menu li:hover .lista{
+  display: block;;
+}
+
+.menu li a{
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+.lista {
+  list-style-type: none;
+  padding-left: 0px;
+  border-top: 2px solid black;
+  margin-top: 10px;
+  display: none;
+
+}
+.lista li{
+  text-align: left;;
+  text-transform: lowercase;
+  border-bottom: 1px solid red;
+  padding: 10px;
+}
+
+/*==========LIST STYLES ======*/
+
+ol{
+  list-style-type: decimal-leading-zero;
+  list-style-type: upper-alpha;
+  list-style-type: lower-roman;
+}
+.noOrdenada{
+  list-style-type: none;
+  list-style-type: disc;
+  list-style-type: circle;
+  list-style-type: square;
+
+  list-style-image: url(http://orig14.deviantart.net/346c/f/2016/072/1/9/19b93f801bf3ad7613706f847d572901-d9v0ig0.png);
+}
+
+.fuera, .dentro{
+  width: 250px;
+  border: 2px solid red
+}
+.fuera{
+  list-style-position: outside;
+}
+.dentro{
+  list-style-position: inside;
+}
+
+
+
+/********TABLE STYLE ********/
+
+table{
+  width: 600px;
+  font-family: Arial, Verdana, sans-serif;
+  color: #111;
+  empty-cells: show;
+  border-collapse: separate;;
+  border-spacing: 5px 10px;
+}
+th, td{
+  padding: 7px 10px 10px 10px;
+  border:2px solid black;
+}
+
+th{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+  border-bottom: 2px solid #111;
+  border-top:1px solid #999;
+  text-align: left;
+}
+tr.par{
+  background-color: #efefef;
+}
+tr:hover{
+  background-color: #c3e654;
+}
+.detalle{
+  text-align: right;
+}
+
+
+
+
+
+
+/*****/

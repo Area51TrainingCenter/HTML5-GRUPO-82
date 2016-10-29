@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Mi primer form</h1>
+
+    <form class="" action="index.html" method="post">
+      <p>Formulario de búsqueda</p>
+      <br>
+      <p>Usuario:
+        <input type="text" name="name" value="" maxlength="5">
+      </p>
+      <p>Password:
+        <input type="password" name="password" value="" >
+      </p>
+      <p>Déjame un comentario</p>
+      <textarea name="comentarios" rows="8" cols="40">Ingresa tu comentario...</textarea>
+
+      <hr>
+
+      <p>
+        Seleccione un género musical<br>
+        <input type="radio" name="genero" value="rock"> Rock
+        <input type="radio" name="genero" value="pop"> Pop
+        <input type="radio" name="genero" value="jazz"> Jazz
+
+        <input type="radio" name="genero" value="metal"> Heavy Metal
+      </p>
+
+      <hr>
+
+      <p>
+        Seleccione su plato favorito
+        <br>
+        <input type="checkbox" name="platillos" value="1">Lomo Saltado
+        <input type="checkbox" name="platillos" value="2">Chaufa
+        <input type="checkbox" name="platillos" value="3">Locro
+        <input type="checkbox" name="platillos" value="4">Lentejas
+      </p>
+
+      <p>Selecione un distrito</p>
+      <select class="" name="distrito">
+        <option value="2">Surco</option>
+        <option value="3">Rimac</option>
+        <option value="4">San Borja</option>
+        <option value="5">San Luis</option>
+        <option value="6">Chorrillos</option>
+        <option value="7">San Isidro</option>
+      </select>
+
+      <hr>
+
+      <p>Distritos Visitados</p>
+      <select multiple="multiple" class="" name="distrito">
+        <option value="2">Surco</option>
+        <option value="3">Rimac</option>
+        <option value="4">San Borja</option>
+        <option value="5">San Luis</option>
+        <option value="6">Chorrillos</option>
+        <option value="7">San Isidro</option>
+      </select>
+
+      <hr>
+
+      <p>Adjuntar foto de perfil</p>
+      <input type="file" name="profile-pic" value=""><br>
+      <input type="submit" value="Subir Foto">
+    </form>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <form class="" action="http://google.com" method="post">
+      <p>Subscribe NOW!!!!</p>
+      <input type="text" name="email" value="">
+      <input width="30" height="30" src="img/foto.jpg" type="image" name="subscribe" value="Send Email">
+
+      <button name="button">HOLA MUNDO</button>
+
+      <input type="hidden" name="sueldo" value="soy invisible">
+    </form>
+
+    <form class="" action="#" method="post">
+      <label for="edad">Edad</label><br>
+      <input type="text" name="edad" value="">
+
+      <label for="genero">Género:</label>
+
+      <input id="fem" type="radio" name="genero" value="f">
+      <label for="fem">Femenino</label>
+
+      <input id="mas" type="radio" name="genero" value="m">
+      <label for="mas">Masculino</label>
+    </form>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <form class="" action="#" method="post">
+      <fieldset>
+        <legend>Login</legend>
+
+        <label for="user">Usuario</label>
+        <input required="required" placeholder="Ingresa tu cuenta de usuario" type="text" name="name" value=""><br>
+
+        <label for="pass">Password</label>
+        <input required="required" placeholder="Ingresa tu contraseña" type="password" name="pass" value=""><br>
+
+        <input id="remember" type="checkbox" name="name" value="">
+        <label for="remember">Recordar Password</label><br>
+
+        <label for="fecha">Fecha de Nacimiento</label>
+        <input type="date" name="fecha" value="">
+
+        <hr>
+
+        <input type="submit" name="name" value="Ingresar">
+      </fieldset>
+    </form>
+
+
+    <br><br>
+
+
+
+
+
+  </body>
+</html>

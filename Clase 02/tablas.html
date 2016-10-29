@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tablas</title>
+  </head>
+  <body>
+    <h1>Estructura de tablas</h1>
+
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+
+    <hr>
+    <table>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Lunes</th>
+        <th scope="col">martes</th>
+      </tr>
+      <tr>
+        <th scope="row">8:00am</th>
+        <td>Ingles</td>
+        <td>Geo</td>
+      </tr>
+      <tr>
+        <th scope="row">9:00am</th>
+        <td>Literatura</td>
+        <td>Historia</td>
+      </tr>
+    </table>
+
+    <hr>
+    <table border="1">
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Lunes</th>
+        <th scope="col">martes</th>
+      </tr>
+      <tr>
+        <th scope="row">8:00am</th>
+        <td colspan="2">Ingles</td>
+      </tr>
+      <tr>
+        <th scope="row">9:00am</th>
+        <td>Literatura</td>
+        <td>Historia</td>
+      </tr>
+    </table>
+
+    <hr>
+    <table border="1">
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Lunes</th>
+        <th scope="col">Martes</th>
+        <th scope="col">Miércoles</th>
+        <th scope="col">Jueves</th>
+      </tr>
+      <tr>
+        <th scope="row">8:00am</th>
+        <td colspan="2">Ingles</td>
+        <td>Ingles</td>
+        <td>Religión</td>
+      </tr>
+      <tr>
+        <th scope="row">9:00am</th>
+        <td>Literatura</td>
+        <td rowspan="3">Historia</td>
+        <td>Filosofía</td>
+        <td>HTML5</td>
+      </tr>
+      <tr>
+        <th scope="row">9:00am</th>
+        <td>Literatura</td>
+        <td>Filosofía</td>
+        <td>HTML5</td>
+      </tr>
+      <tr>
+        <th scope="row">9:00am</th>
+        <td>Literatura</td>
+        <td>Filosofía</td>
+        <td>HTML5</td>
+      </tr>
+    </table>
+
+    <h1>HEAD - BODY - FOOT</h1>
+
+    <table width="400" border="5" cellpadding="10" cellspacing="10">
+      <thead>
+        <tr>
+            <th bgcolor="#cccccc">Fecha</th>
+            <th bgcolor="#cccccc">Ingresos</th>
+            <th bgcolor="#cccccc">Egresos</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>06/06/2016</th>
+          <td>2000</td>
+          <td>654</td>
+        </tr>
+        <tr>
+          <th>06/06/2016</th>
+          <td align="center">2000</td>
+          <td>654</td>
+        </tr>
+        <tr>
+          <th>06/06/2016</th>
+          <td>2000</td>
+          <td>654</td>
+        </tr>
+        <tr>
+          <th>06/06/2016</th>
+          <td>2000</td>
+          <td>654</td>
+        </tr>
+        <tr>
+          <th>06/06/2016</th>
+          <td>2000</td>
+          <td>654</td>
+        </tr>
+        <tr>
+          <th>06/06/2016</th>
+          <td>2000</td>
+          <td>654</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>S/. 767576 00</td>
+          <td>S/. 7647</td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+
+  </body>
+</html>
