@@ -1,0 +1,18 @@
+body{
+  width: 750px;
+  font-family: Arial, Verdana, sans-serif;
+  color: #665544;
+  text-align: justify;
+  margin: auto;
+}
+blockquote{
+  float: right;
+  width: 200px;
+  font-size: 130%;
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+  margin: 0px 10px;
+  padding: 10px;
+  border-top: 2px solid black;
+  border-bottom:  2px solid black;
+}
