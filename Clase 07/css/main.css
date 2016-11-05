@@ -16,3 +16,34 @@ blockquote{
   border-top: 2px solid black;
   border-bottom:  2px solid black;
 }
+
+p.flotantes{
+  width: 226px;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  background-color: #efefef;
+}
+
+.cont{
+  background-color: lime;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================*/
