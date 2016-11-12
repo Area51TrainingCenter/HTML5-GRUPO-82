@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font: 14px Georgia, serif;
+  background: #CCC;
+}
+article, aside, figure, footer, header, hgroup, nav, section{
+  display: block;
+}
+
+h3{
+  margin: 0 0 8px 0;
+}
+
+.fluid-wrap{
+  width: 70%;
+  margin: 60px auto;
+  padding: 20px;
+  background: #eee;
+  overflow: hidden;
+}
+p{
+  margin: 0 0 20px 0;
+}
+aside.sidebar{
+  width: 35%;
+  float: left;
+}
+.main-content{
+  width: 65%;
+  float: right;
+}
+aside.sidebar ul{
+  list-style: none;
+}
+aside.sidebar ul li a{
+  color: #900;
+  text-decoration: none;
+  padding: 3px 0;
+  display: block;
+}
+
+@media all and (min-width: 1001px){
+  aside.sidebar ul li a:after{
+    content: "(" attr(data-email) ")";
+    font-size: 11px;
+    font-style: italic;
+    color: #666;
+  }
+}
+@media all and (max-width:1000px) and (min-width:520px){
+  aside.sidebar ul li a{
+    padding: 10px 0px;
+    padding-left: 25px;
+    background: url(http://downloadicons.net/sites/default/files/yellow-star-icon-38345.png) no-repeat left center;
+  }
+}
+
+@media all and (max-width: 699px) and (min-width:520px), (min-width:1151px){
+  aside.sidebar ul li a:before{
+    content: "Email: ";
+    font-style: italic;
+    color: #666;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (orientation:portrait){
+  body{
+    background-color: red;
+  }
+}
+
+@media screen and (orientation:landscape){
+  body{
+    background-color: green;
+  }
+}*/
