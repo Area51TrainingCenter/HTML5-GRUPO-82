@@ -1,0 +1,108 @@
+body{
+  background: rgba(0, 0, 0, 0.1);
+  width: 800px;
+}
+.box1{
+  border: 1px solid black;
+  background: lime;
+  width: 200px;
+  height: 200px;
+  transform: translate(20px, 50px);
+}
+.box2{
+  width: 100px;
+  height: 100px;
+  background: red;
+  border: 3px solid black;
+  border-radius: 40px 0px;
+  transform: rotate(45deg);
+}
+
+.box3{
+  font-size: 30px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 40px;
+  background: green;
+  color: blue;
+  display: block;
+  width: 150px;
+
+  transform: scale(2,1);
+}
+
+.box4{
+  border: 1px solid red;
+  background: black;
+  width: 500px;
+  height: 150px;
+  color: white;
+  padding: 10px;
+
+  /*transform: skewX(30deg);*/
+  transform: skewY(30deg);
+
+}
+
+h1{
+  display: block;
+  width: 370px;
+  height: 50px;
+  padding: 20px;
+  background: rgba(100, 20, 50, 0.4);
+
+  /*  scaleX, skkewY, skewX, scaleY, translateX, translateY  */
+  transform: matrix(1.5, -0.4, 0, 1, 50, 20 );
+
+}
+
+/***********3D TRANSFORM ******/
+
+.box_x{
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  background: rgba(255, 0, 0, 0.2);
+  padding: 10px;
+
+  transform: rotateZ(0deg);
+  transition: all 2s ease;
+}
+.box_x:hover{
+  background: rgba(255, 0, 0, 0.5);
+  transform: rotate3d(0.9, 0.1, 0.9, 360deg);
+}
+
+/********ANIMATION DEMO ***+++++****/
+@keyframes miAmnimacion {
+  0%   { background-color: red; border-radius: 0px;}
+  25%  { background-color: green; border-radius: 50px;}
+  50%  { background-color: white; border-radius: 0px;}
+  75%  { background-color: black; border-radius: 50%;}
+  100% { background-color: red;border-radius: 0px;}
+}
+
+.layer{
+  top:0%;left: 0%; right: 90%;bottom: 90%;
+  position: absolute;
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  border-radius: 0px;
+  z-index: 9;
+  border: 1px solid blue;
+
+  animation-name: miAmnimacion;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+/**/
