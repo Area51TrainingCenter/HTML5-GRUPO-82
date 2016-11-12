@@ -1,0 +1,99 @@
+.large{
+  width: 200px;
+}
+.medium{
+  width: 250px;
+  height: 250px;
+}
+.small{
+  width: 100px;
+  height: 100px;
+}
+
+img.aLeft{
+  float: left;
+  margin-right: 10px;
+}
+img.aRight{
+  float: right;
+  margin-left: 10px;
+}
+
+body{
+  background-image: url(../images/pattern.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-position: 100% 50%;
+}
+
+
+a.button{
+  height: 36px;
+  background-image: url(../images/button-sprite.jpg);
+  display: inline-block;
+  text-indent: -999999px;
+  cursor: pointer;
+}
+a#carrito{
+  width: 174px;
+  background-position: 0px 0px
+}
+a#opciones{
+  width: 210px;
+  background-position: -175px 0px;
+}
+
+a#carrito:hover{
+  background-position: 0px -40px
+}
+a#opciones:hover{
+  background-position: -175px -40px;
+}
+
+a#carrito:active{
+  background-position: 0px -80px
+}
+a#opciones:active{
+  background-position: -175px -80px;
+}
+
+
+a.comprar{
+  background: lime;
+  padding: 15px 30px;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px 0px;
+  border: 2px solid black;
+  font-size: 60px;
+  margin: 200px 0px;
+  display: inline-block;
+
+  transition: all 4s ease;
+  /*transition-timing-function: linear;
+  transition-timing-function: ease;
+  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;*/
+
+  transition-delay: 1s;
+
+
+
+
+
+}
+a.comprar:hover{
+  padding: 30px 60px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+/*     */
