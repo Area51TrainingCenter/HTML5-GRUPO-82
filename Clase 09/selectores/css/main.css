@@ -1,0 +1,91 @@
+.plus h3+p{
+  color: red;
+}
+
+.mayor>p{
+  color: red;
+}
+
+.menu a[title]{
+  color: red;
+}
+.menu a[lang="es"]{
+  color: green;
+}
+.menu a[href="http://google.com/"]{
+  font-weight: bold;
+  color: black;
+}
+.menu a[href*="gmai"]{
+  font-weight: bold;
+  color: red;
+}
+.menu a[href^="#"]{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: lime;
+}
+
+.menu p[class$="afo"]{
+  padding: 5px;
+  border: 1px solid red;
+}
+
+.tags .aTag:not(#principal){
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 12px;
+  padding: 5px;
+}
+
+.textos p::first-letter{
+  float: left;
+  font-size: 30px;
+  padding-right: 5px;
+  color: red;
+}
+
+.textos p::first-line{
+  color: blue;
+}
+
+.users ul li:nth-child(2n){
+  color: red;
+}
+.users ul li:nth-last-child(3){
+  color: blue;
+  font-size: 24px;
+}
+
+.menu2{
+  background: grey;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.menu2 ul{
+  list-style-type: none;
+}
+.menu2 ul li{
+  padding: 2px 5px;
+  border-bottom: 2px solid white;
+  color: white;
+}
+.menu2 ul li:last-child{
+  border: 0px;
+}
+.menu2 ul li:first-child{
+  color: red;
+}
+
+
+ul:first-of-type > li:nth-child(2) {
+ font-weight: bold;
+}
+
+
+
+
+
+
+/++++/
