@@ -1,0 +1,37 @@
+.miModal{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.75);
+
+  display: none;
+}
+.jumbotron{
+  width: 400px;
+  height: 180px;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -90px;
+  left: 50%;
+  margin-left: -200px;
+}
+.profile{
+  display: none;
+  width: 250px;
+}
+.detalle{
+  display: none;
+}
+.addPicture{
+  padding: 0px 18px;
+  font-size: 40px;
+  color: white;
+  background-color: blue;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 14px;
+  right: 14px;
+}
