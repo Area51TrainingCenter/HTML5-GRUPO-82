@@ -1,3 +1,18 @@
 body{
 	background: rgba(255,0,0,0.2);
 }
+#lista1{
+	list-style-type: none;
+	padding-left: 20px; 
+}
+#lista1 li{
+	padding: 6px 12px;
+	border: 1px solid black;
+	background: rgba(0,255,0,0.5);
+	text-align: center;
+	color: black;
+}
+.done{
+	background: rgba(255,0,0,0.5) !important;
+	color: white !important;
+}
