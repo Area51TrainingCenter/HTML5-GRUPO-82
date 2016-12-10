@@ -13,6 +13,14 @@ body{
 	color: black;
 	transition: all 0.5s ease;
 }
+#lista1 li span{
+	background: white;
+	padding: 2px 5px;
+	font-weight: bold;
+	cursor: pointer;
+	float: right;
+	margin-right: 5px;
+}
 .done{
 	background: rgba(255,0,0,0.5) !important;
 	color: white !important;
