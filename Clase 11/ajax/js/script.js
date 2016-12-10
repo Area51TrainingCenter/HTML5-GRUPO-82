@@ -25,6 +25,21 @@ var hotel = {
 console.log( hotel.nombre + '\n' );
 console.log( hotel.disponibles() );
 
+var pokedex = "";
+$.getJSON("js/pokemon.json", function(data){
+	console.log(data.pokemon.length);
+
+	for(var i = 0; i<data.pokemon.length; i++){
+		pokedex += '<div class="pokemon">'+
+					'<img src=" '+ data.pokemon[i].img +' " width="120" height="120" />'+
+					'<p>' + data.pokemon[i].id + ': ' + data.pokemon[i].name + '</p>'+
+					'<p>Tipo: ' + data.pokemon[i].type[0] + '</p>'+
+				'</div>';
+	}
+
+	$(".pokedex").html(pokedex);
+
+});
 
 
 
