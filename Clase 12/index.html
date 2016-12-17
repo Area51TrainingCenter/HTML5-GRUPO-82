@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JSONP</title>
+  </head>
+  <style media="screen">
+    .item{
+      background: rgba(0, 0, 255, 0.2);
+      border: 1px solid black;
+      margin-bottom: 12px;
+      border-radius: 24px;
+    }
+    .item img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .item h1{
+      font-weight: bold;
+      color: re;
+      font-size: 18px;
+    }
+  </style>
+  <body>
+
+    <div id="contenedor">
+
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $.ajax({
+        url: 'https://jsonplaceholder.typicode.com/photos',
+        dataType: "jsonp",
+        jsonp: 'callback',
+        jsonpCallback: 'jsonp_callback'
+      });
+
+      function jsonp_callback(data){
+        console.log(data);
+
+        var items = "";
+        for(var i =0; i<data.length; i++){
+          items+= '<div class="item">'+
+            '<img src=" '+ data[i].thumbnailUrl +' " alt="" />'+
+            '<h1>'+data[i].title+'</h1>'+
+          '</div>';
+        }
+
+        $("#contenedor").html(items);
+
+      }
+    </script>
+  </body>
+</html>
